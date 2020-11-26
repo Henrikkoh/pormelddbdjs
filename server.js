@@ -55,29 +55,7 @@ name: "submitmod",
 code: `$color[#90ee90]
 $title[Submit Mod to PMD]`
 })
-bot.command({
 
-name: "evl", 
-
-code: `$eval[$message]
-
-
-$onlyIf[$authorID==513097616184311811; Locked command]`
-
-})
-bot.command({
-
-name: "check",
-
-code: `Input:
-
-Is the phrase \`fragilistic\` in supercalifragilisticexpialidocious
-
-Output:
-
-$checkContains[supercalifragilisticexpialidocious;fragilistic]`
-
-})
 bot.command({
 
 name: "stats", 
