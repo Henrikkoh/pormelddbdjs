@@ -1,0 +1,34 @@
+{
+
+  "name": "Pormeld PMD bot by Henrikkoh#3344",
+
+  "version": "1.0.0",
+
+  "description": "",
+
+  "main": "server.js",
+
+  "scripts": {
+
+    "start": "node server.js"
+
+  },
+
+  "engines": {
+
+    "node": "12.x"
+
+  },
+
+  "author": "",
+
+  "license": "ISC",
+
+  "dependencies": {
+
+    "dbd.js": "^0.6.5"
+
+  }
+
+}
+
