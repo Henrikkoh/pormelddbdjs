@@ -53,8 +53,18 @@ $color[#90ee90]`
 bot.command({
 name: "submitmod",
 code: `$color[#90ee90]
-$title[Submit Mod to PMD]`
+$setUserVar[prog;1;$authorID]
+$title[Submit Mod to PMD]
+$description[To submit a mod to the Portal Mod Direct, use \`p!newmod (mod name)\`
+
+At any time during the submission process you may use \`p!modcancel\` to cancel the submission process.]
+$footer[Pormeld PMD bot v0.5 Alpha | hk;https://i.imgur.com/Vp76mpW.jpg]`
 })
+bot.command({
+name: "modcancel",
+code: `$color[#90ee90]`
+})
+
 
 bot.command({
 
@@ -79,7 +89,7 @@ Command no. : **\`$commandsCount\`**
 Total number of members in PMD: **\`$allMembersCount\`**
 
 Bot Version **v0.5 Alpha**
-DBD.js version **0.6.5**
+DBD.js version **1.0.1**
 
 Developed by **Henrikkoh#3344**]
 $footer[Pormeld PMD bot v0.5 Alpha | hk;https://i.imgur.com/Vp76mpW.jpg]
