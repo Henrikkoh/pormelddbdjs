@@ -1,17 +1,19 @@
 const dbd = require("dbd.js")
  
 const bot = new dbd.Bot({
-token: "", 
-prefix: "" 
+token: "(your bot token)", 
+prefix: "(prefix you want)" 
 })
  
 bot.onMessage()
  
+//shows bot ping in ms
 bot.command({
 name: "ping", 
 code: `Pong! My ping is \`$ping\`ms` 
 })
 
+//say command with anti-@everyone or roles
 bot.command({
 name: "say", 
 code: `
@@ -20,11 +22,14 @@ $message`
 
 })
 
+//bot status, customize it to what you want
 bot.status({
   text: "over $allMembersCount robots and test subjects | p!help",
-  type: "WATCHING",
+  type: "WATCHING/LISTENING/PLAYING/STREAMING",
   time: 12
 })
+
+//evaluate function command
 bot.command({
 
 name: "eval", 
@@ -32,6 +37,7 @@ name: "eval",
 code: `$eval[$message]
 $onlyIf[$authorID==539427271698808845; Owner only command!]`
 
+//help command with command list, modify to you own preference
 })
 bot.command({
 
